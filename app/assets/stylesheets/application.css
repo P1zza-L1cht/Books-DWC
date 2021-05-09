@@ -20,7 +20,7 @@
   box-sizing: border-box;
   }
 
- body{
+ body {
     background-color: #fff;
     color: #333;
     font-family: verdana, arial, helvetica, sans-serif;
@@ -29,7 +29,7 @@
     margin: 33px;
   }
 
- p, ol, ul, td{
+ p, ol, ul, td {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -62,3 +62,7 @@
   div {
     display: block;
   }
+
+ .notice {
+   color: green;
+ }
