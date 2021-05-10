@@ -1,4 +1,15 @@
 <h1>Editing Book</h1>
+ <% if @book.errors.any? %>
+  <div class="error">
+    <h2 class="message"><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
 
 <%= form_with model: @book, url:book_path(@book), local:true do |f| %>
 
@@ -12,7 +23,7 @@
   </div>
 
   <div class="actions">
-  <%= f.submit 'Update' %>
+  <%= f.submit 'Update Book' %>
   </div>
 
 <% end %>
